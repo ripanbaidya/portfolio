@@ -42,6 +42,12 @@
 	}
 }
 
+@keyframes social-icon-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 .google-profile-ring {
 	animation: google-profile-ring 8s linear infinite;
 }
@@ -77,6 +83,11 @@
 	animation-play-state: running;
 }
 
+.group:hover .social-link-icon,
+.group:focus-visible .social-link-icon {
+	animation: social-icon-spin 700ms ease-in-out 1;
+}
+
 .project-link:hover .project-link-ring,
 .project-link:focus-visible .project-link-ring {
 	opacity: 1;
@@ -89,6 +100,7 @@
 	.social-link-ring,
 	.project-link-ring,
 	.copy-email-ring,
+	.social-link-icon,
 	.hero-title-in {
 		animation: none;
 	}
