@@ -60,7 +60,6 @@ export interface ProjectLink {
 
 export interface Project {
   name: string;
-  logoUrl: string;
   description: string;
   techStack: string[];
   links: ProjectLink[];
@@ -79,4 +78,14 @@ export interface Technology {
   name: string;
   icon: TechnologyIconName;
   colorClassName: string;
+}
+
+export interface UsesCategory {
+  label: string;
+  items: UsesItem[];
+}
+
+export interface UsesItem {
+  name: string;
+  description: string;
 }
