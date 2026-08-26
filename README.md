@@ -14,7 +14,7 @@
 </p>
 
 <p>
-  <a href="URL.">↗ Visit my Portfolio</a>
+  <a href="https://ripanbaidya.vercel.app/">↗ Visit my Portfolio</a>
 </p>
 
 <p align="right">
