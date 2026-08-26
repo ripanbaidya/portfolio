@@ -156,7 +156,7 @@ export function Contact() {
                         <span className="relative z-10 flex h-full w-full items-center justify-center rounded-full">
                           <LinkIcon
                             name={link.icon}
-                            className={`h-5 w-5 ${link.iconClassName}`}
+                            className={`social-link-icon h-5 w-5 ${link.iconClassName}`}
                           />
                         </span>
                       </a>
