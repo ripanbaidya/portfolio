@@ -11,7 +11,7 @@ export function Navbar() {
       <Container>
         <nav className="relative flex min-h-16 items-center justify-between gap-4" aria-label="Primary navigation">
           <a
-            href="#home"
+            href="/"
             className="inline-flex h-10 w-10 items-center justify-center rounded-full p-[2px] transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-950"
             style={{
               background: `conic-gradient(from 25deg, ${GOOGLE_COLORS[0]} 0deg 105deg, ${GOOGLE_COLORS[1]} 105deg 195deg, ${GOOGLE_COLORS[2]} 195deg 280deg, ${GOOGLE_COLORS[3]} 280deg 360deg)`,
