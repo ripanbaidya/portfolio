@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Petit+Formal+Script&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-tech-name:hover {
+	color: #ffffff !important;
+}
+
+.scroll-to-top-button {
+	right: 1rem;
+	bottom: max(2.5rem, calc(2rem + env(safe-area-inset-bottom)));
+}
+
+@media (min-width: 640px) {
+	.scroll-to-top-button {
+		right: 1.5rem;
+		bottom: 1.5rem;
+	}
+}
+
+@keyframes hero-title-in {
+	from {
+		opacity: 0;
+		transform: translateY(0.35rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.hero-title-in {
+	display: inline-block;
+	animation: hero-title-in 360ms ease-out both;
+}
+
+@keyframes google-profile-ring {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.google-profile-ring {
+	animation: google-profile-ring 8s linear infinite;
+}
+
+.scroll-top-ring {
+	animation: google-profile-ring 8s linear infinite;
+	-webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+	mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+}
+
+.social-link-ring {
+	animation: google-profile-ring 8s linear infinite;
+	animation-play-state: paused;
+	-webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+	mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+}
+
+.project-link-ring {
+	animation: google-profile-ring 8s linear infinite;
+	animation-play-state: paused;
+	-webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+	mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+}
+
+.copy-email-ring {
+	animation: google-profile-ring 700ms ease-out 1;
+	-webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+	mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 0);
+}
+
+.group:hover .social-link-ring,
+.group:focus-visible .social-link-ring {
+	animation-play-state: running;
+}
+
+.project-link:hover .project-link-ring,
+.project-link:focus-visible .project-link-ring {
+	opacity: 1;
+	animation-play-state: running;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.google-profile-ring,
+	.scroll-top-ring,
+	.social-link-ring,
+	.project-link-ring,
+	.copy-email-ring,
+	.hero-title-in {
+		animation: none;
+	}
+}
+
+html.lenis,
+html.lenis body {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+}
