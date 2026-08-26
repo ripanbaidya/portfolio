@@ -18,14 +18,7 @@ export function Projects() {
             key={project.name}
             className="group relative flex flex-col gap-5 bg-neutral-950 py-7 transition-colors duration-300 first:pt-0 last:pb-0 sm:flex-row sm:items-start sm:gap-8"
           >
-            <div className="flex min-w-44 items-center gap-3 sm:items-start sm:pt-1">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white p-1 transition-colors duration-300 group-hover:border-[#4285F4]">
-                <img
-                  src={project.logoUrl}
-                  alt={`${project.name} logo`}
-                  className="h-full w-full scale-125 object-contain"
-                />
-              </span>
+            <div className="min-w-44 sm:pt-1">
               <h3
                 className="text-xl font-semibold transition-colors duration-300 group-hover:text-white"
                 style={{ color: "white" }}
