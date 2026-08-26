@@ -8,6 +8,14 @@
 	color: #ffffff !important;
 }
 
+.hero-name-character {
+	transition: color 180ms ease-out;
+}
+
+.hero-name-character:hover {
+	color: #ffffff !important;
+}
+
 .scroll-to-top-button {
 	right: 1rem;
 	bottom: max(2.5rem, calc(2rem + env(safe-area-inset-bottom)));
