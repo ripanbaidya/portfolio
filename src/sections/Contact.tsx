@@ -7,9 +7,14 @@ import { GOOGLE_COLORS } from "../data/googlePalette";
 import { profile } from "../data/profile";
 import { socialLinks } from "../data/socialLinks";
 import { messagePlaceholders } from "../data/contacts";
+import { sendContactForm } from "../lib/emailjs";
 
 export function Contact() {
   const [isEmailCopied, setIsEmailCopied] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">(
+    "idle",
+  );
 
   const [messagePlaceholderIndex, setMessagePlaceholderIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
@@ -33,6 +38,23 @@ export function Contact() {
     await navigator.clipboard.writeText(profile.email);
     setIsEmailCopied(true);
     window.setTimeout(() => setIsEmailCopied(false), 1200);
+  }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    setIsSending(true);
+    setFormStatus("idle");
+
+    try {
+      await sendContactForm(form);
+      form.reset();
+      setFormStatus("success");
+    } catch {
+      setFormStatus("error");
+    } finally {
+      setIsSending(false);
+    }
   }
 
   return (
@@ -146,7 +168,7 @@ export function Contact() {
           </div>
 
           <div className="space-y-5">
-            <form className="space-y-5" onSubmit={(event) => event.preventDefault()}>
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -201,23 +223,35 @@ export function Contact() {
               <div className="flex justify-center sm:justify-start">
                 <button
                   type="submit"
+                  disabled={isSending}
                   className="inline-flex items-center justify-center rounded-full border px-6 py-3 text-sm font-semibold transition hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-950"
                   style={{
                     color: GOOGLE_COLORS[0],
                     borderColor: `${GOOGLE_COLORS[0]}66`,
                   }}
                 >
-                  Send Message
+                  {isSending ? "Sending..." : "Send Message"}
                 </button>
               </div>
+              <p
+                aria-live="polite"
+                className={`text-sm ${
+                  formStatus === "success"
+                    ? "text-[#34A853]"
+                    : formStatus === "error"
+                      ? "text-[#EA4335]"
+                      : "sr-only"
+                }`}
+              >
+                {formStatus === "success"
+                  ? "Thanks, your message has been sent."
+                  : "Something went wrong. Please try again or email me directly."}
+              </p>
             </form>
           </div>
         </div>
       </Container>
     </section>
   );
-}
-function playSuccessSound() {
-  throw new Error("Function not implemented.");
 }
 
