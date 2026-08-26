@@ -4,7 +4,6 @@ import type { Project } from "../types/portfolio";
 export const projects: Project[] = [
   {
     name: "LuneCare",
-    logoUrl: "/images/projects/healthcare.png",
     description:
       "Distributed Doctor Appointment Booking Platform",
     techStack: ["Spring Cloud", "Microservices", "Redis", "Kafka", "Kubernetes"],
@@ -25,7 +24,6 @@ export const projects: Project[] = [
   },
   {
     name: "WalletIQ",
-    logoUrl: "/images/projects/walletiq.png",
     description:
       "RAG Based AI Finance Manager",
     techStack: ["Spring Boot", "PostgreSQL", "Docker", "GCP", "React.js"],
@@ -46,7 +44,6 @@ export const projects: Project[] = [
   },
   {
     name: "Portfolio",
-    logoUrl: "/images/projects/portfolio.png",
     description:
       "Pesonal Portfolio ",
     techStack: ["TypeScript", "React.js", "Tailwind CSS"],
