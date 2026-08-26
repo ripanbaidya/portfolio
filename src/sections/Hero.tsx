@@ -41,6 +41,7 @@ export function Hero() {
                   {Array.from(word).map((character, characterIndex) => (
                     <span
                       key={`${character}-${characterIndex}`}
+                      className="hero-name-character"
                       style={{
                         color: getGoogleColor(
                           (wordIndex * word.length + characterIndex) %
