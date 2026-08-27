@@ -89,3 +89,9 @@ export interface UsesItem {
   name: string;
   description: string;
 }
+
+export interface BlogPost {
+  title: string;
+  description: string;
+  href: string;
+}
