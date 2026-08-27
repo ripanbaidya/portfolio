@@ -11,8 +11,16 @@ function AppWithSmoothScroll() {
       return;
     }
 
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      anchors: true,
+      lerp: 0.075,
+      smoothWheel: true,
+      wheelMultiplier: 0.9,
+    });
     let frameId = 0;
+
+    const scrollToTop = () => lenis.scrollTo(0);
+    window.addEventListener("portfolio:scroll-top", scrollToTop);
 
     const raf = (time: number) => {
       lenis.raf(time);
@@ -23,6 +31,7 @@ function AppWithSmoothScroll() {
 
     return () => {
       window.cancelAnimationFrame(frameId);
+      window.removeEventListener("portfolio:scroll-top", scrollToTop);
       lenis.destroy();
     };
   }, []);
