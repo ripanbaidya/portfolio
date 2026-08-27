@@ -7,7 +7,6 @@ export const profile: Profile = {
     "Developer",
     "Open Source Lover",
     "Competitive Programmer",
-    "Java & Spring Boot Fan ✦",
   ],
   intro:
     "I like to build scalable architecture on the cloud. I have hands on experience in different aspects of Backend Engineering and Cloud Native technologies. Hugely interested in Microservices, System Design and Problem Solving.",
