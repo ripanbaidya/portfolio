@@ -3,12 +3,13 @@ import { usesCategories } from "../data/uses";
 
 export function Uses() {
   return (
-    <div className="relative overflow-hidden pb-20 pt-16 sm:pb-28 sm:pt-24">
+    <div className="relative overflow-hidden bg-neutral-950 pb-20 pt-16 sm:pb-28 sm:pt-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-96 bg-[radial-gradient(ellipse_at_top,rgba(66,133,244,0.14),transparent_68%)]" />
       <Container>
         <header className="relative max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400">
-            <span className="text-[#4285F4]">{"<"}</span> Uses{" />"}
+            <span className="text-[#4285F4]">{"<"}</span> Uses
+            <span className="text-[#EA4335]">{" />"}</span>
           </p>
 
           <p className="mt-6 max-w-xl text-base leading-7 text-neutral-400 sm:text-lg">
