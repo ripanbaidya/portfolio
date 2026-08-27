@@ -21,7 +21,7 @@ export function ScrollToTopButton() {
     <button
       type="button"
       aria-label="Scroll to top"
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      onClick={() => window.dispatchEvent(new Event("portfolio:scroll-top"))}
       className="scroll-to-top-button isolate fixed z-50 flex h-11 w-11 items-center justify-center rounded-full p-[2px] text-white shadow-lg transition hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
     >
       <span
