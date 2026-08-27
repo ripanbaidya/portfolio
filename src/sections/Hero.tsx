@@ -75,22 +75,20 @@ export function Hero() {
             <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
               <a
                 href="#projects"
-                className="rounded-full border px-5 py-3 text-sm font-semibold transition hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-950"
+                className="rounded-full border bg-blue-500/[0.04] px-5 py-3 text-sm font-semibold transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-blue-500/[0.12] hover:shadow-[0_8px_24px_rgba(66,133,244,0.18)] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-950"
                 style={{
                   color: GOOGLE_COLORS[0],
                   borderColor: `${GOOGLE_COLORS[0]}66`,
-                  backgroundColor: "rgba(66, 133, 244, 0.04)",
                 }}
               >
                 View Projects
               </a>
               <a
                 href="/resume.pdf"
-                className="rounded-full border px-5 py-3 text-sm font-semibold transition hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-950"
+                className="rounded-full border bg-red-500/[0.04] px-5 py-3 text-sm font-semibold transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-red-500/[0.12] hover:shadow-[0_8px_24px_rgba(234,67,53,0.18)] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-950"
                 style={{
                   color: GOOGLE_COLORS[1],
                   borderColor: `${GOOGLE_COLORS[1]}66`,
-                  backgroundColor: "rgba(234, 67, 53, 0.04)",
                 }}
               >
                 Resume
