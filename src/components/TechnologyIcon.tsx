@@ -6,6 +6,7 @@ import {
   SiApachemaven,
   SiKubernetes,
   SiMongodb,
+  SiNodedotjs,
   SiOpenjdk,
   SiPostgresql,
   SiPython,
@@ -39,6 +40,7 @@ const iconMap = {
   maven: SiApachemaven,
 
   typescript: SiTypescript,
+  nodejs: SiNodedotjs,
   react: SiReact,
   tailwind: SiTailwindcss,
 
