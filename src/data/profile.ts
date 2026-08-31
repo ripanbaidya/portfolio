@@ -5,6 +5,7 @@ export const profile: Profile = {
   email: "work.ripanbaidya@gmail.com",
   title: [
     "Developer",
+    "Freelancer",
     "Open Source Lover",
     "Competitive Programmer",
   ],
