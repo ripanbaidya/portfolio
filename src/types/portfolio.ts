@@ -20,6 +20,7 @@ export type TechnologyIconName =
   | "junit"
   | "maven"
   | "typescript"
+  | "nodejs"
   | "react"
   | "tailwind"
   | "postgresql"
