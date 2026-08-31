@@ -18,6 +18,7 @@ export const technologies: Technology[] = [
 
   // Frontend
   { name: "TypeScript", icon: "typescript", colorClassName: "text-[#3178C6]" },
+  { name: "Node.js", icon: "nodejs", colorClassName: "text-[#339933]" },
   { name: "React", icon: "react", colorClassName: "text-[#61DAFB]" },
   { name: "Tailwind CSS", icon: "tailwind", colorClassName: "text-[#06B6D4]" },
 
