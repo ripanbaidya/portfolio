@@ -17,14 +17,14 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: "LeetCode",
-    href: "https://leetcode.com/u/ripan_baidya/",
+    href: "https://leetcode.com/u/ripanbaidya/",
     icon: "leetcode",
     iconClassName: "text-[#FFA116]",
     hoverClassName: "hover:text-[#FFA116]",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/nooglerx/",
+    href: "https://www.instagram.com/riwinbdya/",
     icon: "instagram",
     iconClassName: "text-[#E4405F]",
     hoverClassName: "hover:text-[#E4405F]",
