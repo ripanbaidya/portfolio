@@ -4,9 +4,14 @@ import type { Project } from "../types/portfolio";
 export const projects: Project[] = [
   {
     name: "LuneCare",
-    description:
-      "Distributed Doctor Appointment Booking Platform",
-    techStack: ["Spring Cloud", "Microservices", "Redis", "Kafka", "Kubernetes"],
+    description: "Distributed Doctor Appointment Booking Platform",
+    techStack: [
+      "Spring Cloud",
+      "Microservices",
+      "Redis",
+      "Kafka",
+      "Kubernetes",
+    ],
     links: [
       {
         label: "GitHub",
@@ -20,12 +25,17 @@ export const projects: Project[] = [
         icon: "external",
         hoverClassName: "hover:text-white",
       },
+      {
+        label: "YouTube",
+        href: "https://youtu.be/GIwSpIFIxvk?si=WbwcEEWJka7gBNNs",
+        icon: "youtube",
+        hoverClassName: "hover:text-white",
+      },
     ],
   },
   {
     name: "WalletIQ",
-    description:
-      "RAG Based AI Finance Manager",
+    description: "RAG Based AI Finance Manager",
     techStack: ["Spring Boot", "PostgreSQL", "Docker", "GCP", "React.js"],
     links: [
       {
@@ -40,18 +50,29 @@ export const projects: Project[] = [
         icon: "external",
         hoverClassName: "hover:text-white",
       },
+      {
+        label: "YouTube",
+        href: "https://youtu.be/RR1aa-eNq60?si=UgvIFWFCaCqLmI1d",
+        icon: "youtube",
+        hoverClassName: "hover:text-white",
+      },
     ],
   },
   {
     name: "Portfolio",
-    description:
-      "Pesonal Portfolio ",
+    description: "Pesonal Portfolio ",
     techStack: ["TypeScript", "React.js", "Tailwind CSS"],
     links: [
       {
         label: "GitHub",
         href: "https://github.com/ripanbaidya/portfolio",
         icon: "github",
+        hoverClassName: "hover:text-white",
+      },
+      {
+        label: "Live",
+        href: "https://ripanbaidya.vercel.app/",
+        icon: "external",
         hoverClassName: "hover:text-white",
       },
     ],
