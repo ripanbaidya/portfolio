@@ -3,8 +3,10 @@ import type { Project } from "../types/portfolio";
 // Add, remove, or reorder projects here without changing the Projects section UI.
 export const projects: Project[] = [
   {
+    slug: "lunecare",
     name: "LuneCare",
     description: "Distributed Doctor Appointment Booking Platform",
+    videoUrl: "/videos/lunecare.mp4",
     techStack: [
       "Spring Cloud",
       "Microservices",
@@ -34,8 +36,10 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "wallet-iq",
     name: "WalletIQ",
     description: "RAG Based AI Finance Manager",
+    videoUrl: "/videos/walletiq.mp4",
     techStack: ["Spring Boot", "PostgreSQL", "Docker", "GCP", "React.js"],
     links: [
       {
@@ -59,8 +63,10 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "portfolio",
     name: "Portfolio",
-    description: "Pesonal Portfolio ",
+    description: "Personal Portfolio",
+    videoUrl: "/videos/portfolio.mp4",
     techStack: ["TypeScript", "React.js", "Tailwind CSS"],
     links: [
       {
