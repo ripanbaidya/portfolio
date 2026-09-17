@@ -7,11 +7,15 @@ import { Experience } from "./sections/Experience";
 import { Footer } from "./sections/Footer";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
+import { ProjectDetail } from "./sections/ProjectDetail";
 import { TechnologyMarquee } from "./sections/TechnologyMarquee";
 import { Uses } from "./sections/Uses";
 
 export default function App() {
-  
+  if (window.location.pathname.startsWith("/projects/")) {
+    return <ProjectDetail />;
+  }
+
   if (window.location.pathname === "/uses") {
     return (
       <div className="flex min-h-screen flex-col bg-neutral-950 font-sans text-neutral-100">
