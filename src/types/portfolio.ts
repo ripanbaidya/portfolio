@@ -60,8 +60,10 @@ export interface ProjectLink {
 }
 
 export interface Project {
+  slug: string;
   name: string;
   description: string;
+  videoUrl: string;
   techStack: string[];
   links: ProjectLink[];
 }
