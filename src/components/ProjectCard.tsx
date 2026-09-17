@@ -48,9 +48,9 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/25 to-transparent" />
       {/* Projects numbers, like - 01, 02 and so on. */}
-      {/* <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-neutral-950/75 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-neutral-300">
+      <span className="absolute left-4 top-4 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-neutral-300">
         0{index + 1}
-      </span> */}
+      </span>
 
       <div className="absolute inset-x-0 bottom-0 p-6 sm:p-6">
         <p className="max-w-xl text-base leading-7 text-neutral-200 sm:text-lg">{project.description}</p>
