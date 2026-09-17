@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Container } from "./components/Container";
 import { Navbar } from "./components/Navbar";
 import { ScrollToTopButton } from "./components/ScrollToTopButton";
@@ -12,6 +13,19 @@ import { TechnologyMarquee } from "./sections/TechnologyMarquee";
 import { Uses } from "./sections/Uses";
 
 export default function App() {
+  useEffect(() => {
+    if (!window.location.hash) {
+      return;
+    }
+
+    const frame = window.requestAnimationFrame(() => {
+      const target = document.getElementById(window.location.hash.slice(1));
+      target?.scrollIntoView();
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
   if (window.location.pathname.startsWith("/projects/")) {
     return <ProjectDetail />;
   }
