@@ -22,15 +22,11 @@ export function ProjectDetail() {
                 className="inline-flex items-center gap-2 text-sm font-semibold text-neutral-400 transition hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
               >
                 <span aria-hidden="true">&larr;</span>
-                Back to selected work
+                Back
               </a>
-
               <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(18rem,0.6fr)] lg:items-end lg:gap-16">
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#4285F4]">
-                    Selected project
-                  </p>
-                  <h2 className="mt-4 text-4xl font-light tracking-tight text-white sm:text-5xl">
+                  <h2 className="mt-4 text-3xl font-light tracking-tight text-white sm:text-4xl">
                     {project.name}
                   </h2>
                   <p className="mt-5 max-w-2xl text-lg leading-8 text-neutral-300 sm:text-xl">
@@ -46,8 +42,12 @@ export function ProjectDetail() {
                       aria-label={`${project.name} ${link.label}`}
                       title={link.label}
                       className={`project-link relative isolate inline-flex h-12 w-12 items-center justify-center rounded-full p-[2px] text-neutral-300 transition duration-200 hover:scale-110 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-950 ${link.hoverClassName}`}
-                      target={link.href.startsWith("http") ? "_blank" : undefined}
-                      rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+                      target={
+                        link.href.startsWith("http") ? "_blank" : undefined
+                      }
+                      rel={
+                        link.href.startsWith("http") ? "noreferrer" : undefined
+                      }
                     >
                       <span
                         className="project-link-ring pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-200"
