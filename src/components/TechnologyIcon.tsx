@@ -21,6 +21,9 @@ import {
 } from "react-icons/si";
 
 import type { TechnologyIconName } from "../types/portfolio";
+import { FaAws } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
+import { FcLinux } from "react-icons/fc";
 
 interface TechnologyIconProps {
   name: TechnologyIconName;
@@ -45,14 +48,17 @@ const iconMap = {
   tailwind: SiTailwindcss,
 
   postgresql: SiPostgresql,
+  mysql: DiMysql,
   mongodb: SiMongodb,
   redis: SiRedis,
 
   googlecloud: SiGooglecloud,
+  aws: FaAws,
   docker: SiDocker,
   kubernetes: SiKubernetes,
   git: SiGit,
   githubactions: SiGithubactions,
+  linux: FcLinux,
 };
 
 export function TechnologyIcon({
