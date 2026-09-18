@@ -24,7 +24,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/riwinbdya/",
+    href: "https://www.instagram.com/ridominus/",
     icon: "instagram",
     iconClassName: "text-[#E4405F]",
     hoverClassName: "hover:text-[#E4405F]",
