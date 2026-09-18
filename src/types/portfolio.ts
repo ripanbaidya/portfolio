@@ -9,6 +9,8 @@ export type LinkIconName =
   | "resume"
   | "external";
 
+export type NavigationIconName = "home" | "uses" | "blog";
+
 export type TechnologyIconName =
   | "java"
   | "python"
@@ -39,6 +41,7 @@ export type TechnologyIconName =
 export interface NavLink {
   label: string;
   href: string;
+  icon: NavigationIconName;
 }
 
 export interface SocialLink {
