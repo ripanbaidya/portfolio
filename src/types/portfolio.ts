@@ -24,13 +24,17 @@ export type TechnologyIconName =
   | "react"
   | "tailwind"
   | "postgresql"
+  | "mysql"
   | "mongodb"
   | "redis"
   | "googlecloud"
+  | "aws"
   | "docker"
   | "kubernetes"
   | "git"
-  | "githubactions";
+  | "githubactions"
+  | "linux"
+  ;
 
 export interface NavLink {
   label: string;
